@@ -1,0 +1,25 @@
+{
+  "name": "plantr",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hogutier/Plantr.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hogutier/Plantr/issues"
+  },
+  "homepage": "https://github.com/hogutier/Plantr#readme",
+  "dependencies": {
+    "nodemon": "^1.17.1",
+    "pg": "^6.4.2",
+    "pg-hstore": "^2.3.2",
+    "sequelize": "^4.36.0"
+  }
+}
