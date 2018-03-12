@@ -32,3 +32,13 @@ Plot.belongsToMany(Vegetable, {through: 'vegetable_plot'});
 
 Gardener.belongsTo(Vegetable, {as: 'favorite_vegetable'});
 
+Vegetable.bulkCreate([
+  {name: 'spinach', color: 'green'},
+  {name: 'carrot', color: 'red'},
+  {name: 'beet', color: 'purple'},
+  {name: 'cauliflower', color: 'white'}
+])
+.then(() => {
+  return Plot.create({size: 100, shaded: true})
+})
+.catch(err => console.log(err))
